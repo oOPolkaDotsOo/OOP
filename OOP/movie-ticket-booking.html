@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Ticket Booking</h1>
+    </header>
+
+    <div id="booking-container">
+        <div id="movie-container">
+            <h2>Choose a movie:</h2>
+            <select id="movie-select">
+                <option value="0">Select a movie</option>
+                <option value="1">Movie 1</option>
+                <option value="2">Movie 2</option>
+                <option value="3">Movie 3</option>
+            </select>
+        </div>
+        <div id="showtime-container">
+            <h2>Select a showtime:</h2>
+            <select id="showtime-select">
+                <option value="0">Select a showtime</option>
+                <option value="1">9:00 AM</option>
+                <option value="2">1:00 PM</option>
+                <option value="3">5:00 PM</option>
+                <option value="4">9:00 PM</option>
+            </select>
+        </div>
+        <div id="poster-container">
+            <img id="movie-poster" src="" alt="" class="movie-poster">
+        </div>
+
+        <div id="seat-container">
+            <h2>Choose your seat:</h2>
+            <div id="seat-map">
+                <div class="seat-row">
+                    <div class="seat" data-seat="A1">A1</div>
+                    <div class="seat" data-seat="A2">A2</div>
+                    <div class="seat" data-seat="A3">A3</div>
+                    <div class="seat" data-seat="A4">A4</div>
+                    <div class="seat" data-seat="A5">A5</div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat" data-seat="B1">B1</div>
+                    <div class="seat" data-seat="B2">B2</div>
+                    <div class="seat" data-seat="B3">B3</div>
+                    <div class="seat" data-seat="B4">B4</div>
+                    <div class="seat" data-seat="B5">B5</div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat" data-seat="C1">C1</div>
+                    <div class="seat" data-seat="C2">C2</div>
+                    <div class="seat" data-seat="C3">C3</div>
+                    <div class="seat" data-seat="C4">C4</div>
+                    <div class="seat" data-seat="C5">C5</div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat" data-seat="D1">D1</div>
+                    <div class="seat" data-seat="D2">D2</div>
+                    <div class="seat" data-seat="D3">D3</div>
+                    <div class="seat" data-seat="D4">D4</div>
+                    <div class="seat" data-seat="D5">D5</div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat" data-seat="E1">E1</div>
+                    <div class="seat" data-seat="E2">E2</div>
+                    <div class="seat" data-seat="E3">E3</div>
+                    <div class="seat" data-seat="E4">E4</div>
+                    <div class="seat" data-seat="E5">E5</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form-container">
+            <h2>Provide your information:</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+            </form>
+        </div>
+        <button id="book-btn">Book Ticket</button>
+    </div>
+
+    <div id="ticket-container">
+        <h2>Selected Seats:</h2>
+        <p id="selected-seats"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Movie Ticket Booking</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

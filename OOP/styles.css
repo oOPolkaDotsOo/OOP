@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: red;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    color: white;
+}
+
+#booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#movie-container, #seat-container, #form-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#seat-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 5px;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.selected {
+    background-color: #ffa500;
+    color: white;
+}
+
+#form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#book-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#ticket-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#showtime-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#showtime-select {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.movie-poster {
+    width: 500px;
+    height: auto;
+}
+
+#poster-container {
+    margin-top: 20px;
+}
+
